@@ -14,7 +14,7 @@
   z-index: 1000;
 }
 
-.header-content {
+.checkout-header .header-content {
   width: 100%;
   max-width: 1100px;
 
@@ -22,16 +22,16 @@
   align-items: center;
 }
 
-.checkout-header-left-section {
-  width: 150px;
+.checkout-header .checkout-header-left-section {
+  width: 200px;
 }
 
-.amazon-logo {
-  width: 100px;
-  margin-top: 12px;
+.checkout-header .logo {
+  height: 26px;
+  margin-top: 0px;
 }
 
-.amazon-mobile-logo {
+.checkout-header .mobile-logo {
   display: none;
 }
 
@@ -40,64 +40,70 @@
    means when the screen width is 575px or less, different
    styles (inside the {...}) will be applied. */
 @media (max-width: 575px) {
-  .checkout-header-left-section {
+  .checkout-header .checkout-header-left-section {
     width: auto;
   }
 
-  .amazon-logo {
+  .checkout-header .logo {
     display: none;
   }
 
-  .amazon-mobile-logo {
+  .checkout-header .mobile-logo {
     display: inline-block;
-    height: 35px;
-    margin-top: 5px;
+    height: 26px;
   }
 }
 
-.checkout-header-middle-section {
+.checkout-header .checkout-header-middle-section {
   flex: 1;
   flex-shrink: 0;
   text-align: center;
 
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
 
   display: flex;
   justify-content: center;
 }
 
-.return-to-home-link {
-  color: rgb(0, 113, 133);
-  font-size: 23px;
+.checkout-header .return-to-home-link {
+  color: rgb(25, 135, 84);
+
   text-decoration: none;
   cursor: pointer;
 }
 
 @media (max-width: 1000px) {
-  .checkout-header-middle-section {
+  .checkout-header .checkout-header-middle-section {
     font-size: 20px;
     margin-right: 60px;
   }
 
-  .return-to-home-link {
-    font-size: 18px;
+  .checkout-header .return-to-home-link {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 575px) {
-  .checkout-header-middle-section {
+  .checkout-header .checkout-header-middle-section {
     margin-right: 5px;
   }
 }
 
-.checkout-header-right-section {
+.checkout-header .checkout-header-right-section {
   text-align: right;
-  width: 150px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.checkout-header .checkout-header-right-section img {
+  height: 32px;
 }
 
 @media (max-width: 1000px) {
-  .checkout-header-right-section {
+  .checkout-header .checkout-header-right-section {
     width: auto;
   }
 }
