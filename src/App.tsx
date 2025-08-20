@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
 import Checkout from './pages/Checkout'
-import Order from './pages/order'
+import Order from './pages/Order'
 
 function App() {
 
